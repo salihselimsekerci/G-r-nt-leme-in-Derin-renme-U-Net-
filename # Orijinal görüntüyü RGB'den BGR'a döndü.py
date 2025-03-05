@@ -1,0 +1,5 @@
+# Orijinal görüntüyü RGB'den BGR'a döndür (görüntüleme için)
+orig_bgr = cv2.cvtColor(input_img_rgb, cv2.COLOR_RGB2BGR)
+# Yarı saydam bir birleşim yap (0.5 katsayısı ile)
+overlay = cv2.addWeighted(orig_bgr, 0.5, mask_color, 0.5, 0)
+cv2.imwrite('test1_overlay.png', overlay)
