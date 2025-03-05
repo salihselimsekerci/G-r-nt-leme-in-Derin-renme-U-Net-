@@ -12,10 +12,13 @@ Bu proje, bir **U-Net** modeli kullanarak görüntü segmentasyonu yapmayı hede
 1. Gerekli paketleri kurun:
    ```bash
    pip install tensorflow opencv-python numpy tensorflow-datasets
+
 Eğitimi başlatmak için:
 python src/train.py
+
 Tahmin almak için:
 python src/inference.py
+
 Klasör Yapısı
 ├── src/
 │   ├── unet_model.py    # U-Net tanımı
